@@ -154,12 +154,15 @@ export const Dashboard = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <marquee className={styles["marq"]} bgcolor="#cdc6eb"
         direction="left" loop="1">
-        <div style={{
-          color: "#000000"
-        }}>
-      For All Support What's App Message with email id to  8669646969 / 8669656969
-
-      </div>
+        <span style={{ color: '#FF0000', fontWeight: 'bold' }}>🚨 IMPORTANT ANNOUNCEMENT 🚨 </span>
+      <span style={{ color: '#000000' }}>Due to an issue with WhatsApp, kindly use the following alternatives: </span>
+      <span style={{ color: '#007BFF', fontWeight: 'bold' }}>For Communication: </span>
+      <span style={{ color: '#FF4500' }}>8669 646969</span> or <span style={{ color: '#FF4500' }}>8669 656969</span>. 
+      <span style={{ color: '#007BFF', fontWeight: 'bold' }}>For Deposits: </span>
+      <span style={{ color: '#000000' }}>Use GPay or PhonePe to</span> 
+      <span style={{ color: '#28A745' }}>9226 492672</span>. 
+      <span style={{ color: '#FF0000', fontWeight: 'bold' }}>We apologize for the inconvenience caused.</span>
+   
 
       </marquee>
       <div className={styles["user-race-data-main"]}>
