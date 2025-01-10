@@ -599,8 +599,11 @@ export const Dashboard = () => {
                                     setWalletModal(true);
                                   }}>
                                   {
-                                    participants?.markets[0]?.selections[index]
-                                      .odds?.price
+                                    Math.min(
+                                      participants?.markets[0]?.selections[index]
+                                        .odds?.price || 0,
+                                      14
+                                    )
                                   }
                                 </button>
                                 <button
@@ -662,7 +665,10 @@ export const Dashboard = () => {
                                   }}>
                                   {
                                     participants?.markets[1]?.selections[index]
-                                      .odds?.price
+                                      .odds?.price > 4
+                                      ? 4
+                                      : participants?.markets[1]?.selections[index]
+                                          .odds?.price
                                   }
                                 </button>
                               </>

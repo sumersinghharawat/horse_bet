@@ -669,10 +669,10 @@ export const AdminDashboard = () => {
                         <td>{e.data.jockey}</td>
                         <td>{e.data.trainer}</td>
                         <td>
-                          {oddData?.markets[0]?.selections[index].odds?.price}
+                          {oddData?.markets[0]?.selections[index].odds?.price > 14 ? 14 : oddData?.markets[0]?.selections[index].odds?.price}
                         </td>
                         <td>
-                          {oddData?.markets[1]?.selections[index].odds?.price}
+                          {oddData?.markets[1]?.selections[index].odds?.price > 4 ? 4 : oddData?.markets[1]?.selections[index].odds?.price}
                         </td>
                         <td>
                           <FiEdit
