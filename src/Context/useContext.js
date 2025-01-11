@@ -27,10 +27,12 @@ export const useContext = () => {
     const ampm = hours >= 12 ? "PM" : "AM";
 
     return (
-      (hours % 12).toString().padStart(2, "0") +
+      (hours % 12 || 12).toString().padStart(2, "0") +
       ":" +
       minutes.toString().padStart(2, "0") +
-      "" +
+      ":" +
+      seconds.toString().padStart(2, "0") +
+      " " +
       ampm
     );
   };
