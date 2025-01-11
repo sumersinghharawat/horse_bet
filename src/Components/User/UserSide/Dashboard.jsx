@@ -12,7 +12,6 @@ import { Context } from "../../../App";
 import { UserBetModal } from "./UserBetModal";
 import { ImVideoCamera } from "react-icons/im";
 import ReactLoading from "react-loading";
-
 import axios from "axios";
 import { ReactComponent as NoRace } from "../../../Assets/NoRace.svg";
 
