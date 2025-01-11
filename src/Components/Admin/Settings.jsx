@@ -18,7 +18,7 @@ export default function Settings(props){
     
     useEffect(() => {
         db.collection("participant")
-          .doc("gP7ssoPxhkcaFPuPNIS9AXdv1BE3")
+          .doc("T0xHihFaGFfgLyByPzMcyvHm8du1")
           .onSnapshot((snapshot) => {
             setBetData(snapshot.data()?.data);
           });
@@ -26,7 +26,7 @@ export default function Settings(props){
 
     useEffect(() => {
         db.collection("users")
-          .doc("gP7ssoPxhkcaFPuPNIS9AXdv1BE3")
+          .doc("T0xHihFaGFfgLyByPzMcyvHm8du1")
           .onSnapshot((snapshot) => {
               setAdminBWPData(snapshot.data()?.sc);
           });

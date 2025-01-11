@@ -76,13 +76,13 @@ export const AdminDashboard = () => {
   }, [raceIndexNum]);
   useEffect(() => {
     if (getCookie("access_token")) {
-      navigate(`/user/admin/:gP7ssoPxhkcaFPuPNIS9AXdv1BE3`);
+      navigate(`/user/admin/:T0xHihFaGFfgLyByPzMcyvHm8du1`);
     } else {
       navigate("/login");
     }
 
     db.collection("users")
-      .doc("gP7ssoPxhkcaFPuPNIS9AXdv1BE3")
+      .doc("T0xHihFaGFfgLyByPzMcyvHm8du1")
       .onSnapshot((snapshot) => {
         setAdminBWPData(snapshot.data()?.sc);
       });
@@ -252,7 +252,7 @@ export const AdminDashboard = () => {
       <div>
         <Sidebar />
         <div className="user-data-tabel">
-          {user?.uid === "gP7ssoPxhkcaFPuPNIS9AXdv1BE3" && (
+          {user?.uid === "T0xHihFaGFfgLyByPzMcyvHm8du1" && (
             <div
               style={{
                 display: "flex",
@@ -499,7 +499,7 @@ export const AdminDashboard = () => {
                   )}
               </div>
 
-              {user?.uid === "gP7ssoPxhkcaFPuPNIS9AXdv1BE3" && (
+              {user?.uid === "T0xHihFaGFfgLyByPzMcyvHm8du1" && (
                 <>
                   <Button
                     className={styles["bet-live-button"]}
@@ -661,7 +661,7 @@ export const AdminDashboard = () => {
               </thead>
               <tbody>
                 {!!oddData &&
-                  user?.uid === "gP7ssoPxhkcaFPuPNIS9AXdv1BE3" &&
+                  user?.uid === "T0xHihFaGFfgLyByPzMcyvHm8du1" &&
                   oddData?.participants?.map((e, index) => {
                     return (
                       <tr index={index}>

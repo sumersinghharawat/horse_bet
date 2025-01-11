@@ -57,7 +57,7 @@ const BetTable = () => {
   }, []);
   useEffect(() => {
     db.collection("participant")
-      .doc("gP7ssoPxhkcaFPuPNIS9AXdv1BE3")
+      .doc("T0xHihFaGFfgLyByPzMcyvHm8du1")
       .onSnapshot((snapshot) => {
         setBetData(snapshot.data()?.data);
       });
@@ -76,7 +76,7 @@ const BetTable = () => {
   }, [betData]);
   useEffect(() => {
     db.collection("users")
-      .doc("gP7ssoPxhkcaFPuPNIS9AXdv1BE3")
+      .doc("T0xHihFaGFfgLyByPzMcyvHm8du1")
       .onSnapshot((snapshot) => {
         setAdminBWPData(snapshot.data()?.sc);
       });
@@ -357,7 +357,7 @@ const BetTable = () => {
                 </tr>
               </thead>
               <tbody>
-                {user?.uid === "gP7ssoPxhkcaFPuPNIS9AXdv1BE3" &&
+                {user?.uid === "T0xHihFaGFfgLyByPzMcyvHm8du1" &&
                   raceWiseBetData?.map((e, index) => {
                     return (
                       <tr index={index}>
