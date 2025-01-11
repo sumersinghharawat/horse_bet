@@ -23,9 +23,11 @@ const convertHour = (data) => {
   const date = new Date(data);
   const hours = date.getHours();
   const minutes = date.getMinutes();
+  const ampm = hours >= 12 ? "PM" : "AM";
 
-  return hours + ":" + minutes;
+  return (hours % 12).toString().padStart(2, "0") + ":" + minutes.toString().padStart(2, "0") + "" + ampm;
 };
+
 export const AdminDashboard = () => {
   const auth = getAuth();
 
