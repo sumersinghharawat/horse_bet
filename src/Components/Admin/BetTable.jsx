@@ -204,6 +204,7 @@ const BetTable = () => {
                       items === "BLR" ||
                       items === "CAL" ||
                       items === "MAD" ||
+                      items === "DEL" ||
                       items === "MMB"
                     ) {
                       const array = indiaRace.filter((e) => {
